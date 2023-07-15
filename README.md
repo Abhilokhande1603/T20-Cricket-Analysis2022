@@ -19,56 +19,60 @@ The analysis sections include ->
 
 ## Tech Stacks Used
 
-<img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Power BI%20-%2314354C.svg?&style=for-the-badge&logo=powerBI&logoColor=white"/>
+
 
 ## Libraries Used
 
-<img src="https://img.shields.io/badge/numpy%20-%2314354C.svg?&style=for-the-badge&logo=numpy&logoColor=white"/> <img src="https://img.shields.io/badge/pandas%20-%2314354C.svg?&style=for-the-badge&logo=pandas&logoColor=white"/> <img src="https://img.shields.io/badge/streamlit%20-%2314354C.svg?&style=for-the-badge&logo=streamlit&logoColor=white"/> <img src="https://img.shields.io/badge/nltk%20-%2314354C.svg?&style=for-the-badge&logo=nltk&logoColor=white"/> <img src="https://img.shields.io/badge/scikitlearn%20-%2314354C.svg?&style=for-the-badge&logo=scikitlearn&logoColor=white"/>
+<img src="https://img.shields.io/badge/numpy%20-%2314354C.svg?&style=for-the-badge&logo=numpy&logoColor=white"/> <img src="https://img.shields.io/badge/pandas%20-%2314354C.svg?&style=for-the-badge&logo=pandas&logoColor=white"/> <img src="https://img.shields.io/badge/JSON%20-%2314354C.svg?&style=for-the-badge&logo=json&logoColor=white"/>
 
 ## Structure Of The Project
 
-- Each prediction page is conneceted with a Machine Learning Model which uses either of Logistic Regression, Decision Tree, Random Forest Algorithms to predict the results.
-- Also we have 5 different datasets being used for each prediction.
-- We can land into each prediction site of the web app from the options in the Navigation Menu.
-- We have only 1 relevant feature taken into consideration which is the text and then the text is preprocessed and vectoized with help of TF-IDF Vectorizer to fit into the model and tain it.
-- So the user gets a broad overview of the text after the analysis
+- Used Bright Data Website for web Scrapping code and collected data from the official ICC website handle.
+- Loaded the scrapped file with the help of JSON and with Pandas cleaned the file.
+- In Power query removed duplicates,special characters,replace blank or nulln values, change data type, etc.
+- Modeled different table using primary key as match_id
+- Prepared attractive dashboard using bar graph,pie charts, tables,buttons etc.
 
-## The feature taken into consideration
+## The feature taken into consideration for classification of players performance
 
-| Text Analysis Type | Feature |
-| - | - |
-| Spam or Ham Detection Page | Text |
-| Sentiment Analysis Page | Text |
-| Stress Detection Page | Text |
-| Hate & Offensive Content Page | Text |
-| Sarcasm Detection | Text |
-
-The text is preprocessed then fed to the model.
-
-## Deployment Of The Project
-
-After the modeling part the model is deployed using Streamlit library on Streamlit Share so that the app is available for usage for everyone.
-
-## Link To My Web Application -
-
-https://share.streamlit.io/bhaswatiroy/complete-text-analysis-streamlit-web-app/main/app.py
+| Parameters| 
+| - |
+| Batting Average |
+| Bowling Average |
+| Run Rate | 
+| Strike Rate| 
+| Boundary % | 
+| Innings Batted |
+| Batting position | 
+| Bowling Ecnomy|
+| Bowling Strike Rate|
+| Innings Bowled |
+| Dot Ball % |
+| Bowling Style | 
 
 ## Glance At The Hosted Application- 
 
-### 1. Home Page
-![image](https://user-images.githubusercontent.com/78029145/154792997-c60376bb-411a-4624-aeeb-f552416a8cfb.png)
+### 1. Power Hiters
+![Screenshot 2023-07-15 224525](https://github.com/Abhilokhande1603/T20-Cricket-Analysis2022/assets/94048021/c4c269eb-378f-4982-88b4-d10144f0a9d6)
 
-### 2. Spam or Ham Detection Page
-![image](https://user-images.githubusercontent.com/78029145/154802534-75818785-70a8-46ff-99cc-adfef7b0c95b.png)
+### 2. Anchors/Middle Order
+![Screenshot 2023-07-15 224607](https://github.com/Abhilokhande1603/T20-Cricket-Analysis2022/assets/94048021/b7585e8c-4987-4a2c-9f21-0ab0cf64fbe0)
 
-### 3. Sentiment Analysis Page
-![image](https://user-images.githubusercontent.com/78029145/154802666-e9d3ecff-4341-49c5-89ea-40301bbc51a3.png)
+### 3. Finisher/Lower Order Anchor
+![Screenshot 2023-07-15 224639](https://github.com/Abhilokhande1603/T20-Cricket-Analysis2022/assets/94048021/d1c9c3f8-8e98-4eda-88d3-92d4c8ffbea9)
 
-### 4. Stress Detection Page
-![image](https://user-images.githubusercontent.com/78029145/154802705-197c0f6a-72f4-4604-aebd-10052de7f4fb.png)
 
-### 5. Hate & Offensive Content Page
-![image](https://user-images.githubusercontent.com/78029145/154802808-7b14fb2f-08cd-4d4a-919a-31d758268dfb.png)
+### 4. All Rounder/Middle Order Anchor
 
-### 6. Sarcasm Detection Page
-![image](https://user-images.githubusercontent.com/78029145/154803109-95c09327-edd8-4da8-992f-06c55f709996.png)
+![Screenshot 2023-07-15 224742](https://github.com/Abhilokhande1603/T20-Cricket-Analysis2022/assets/94048021/286f4b89-87b3-440f-9b11-887a898ff8a8)
+
+
+### 5. Specialist Fast Bowler/Tail End
+![Screenshot 2023-07-15 224810](https://github.com/Abhilokhande1603/T20-Cricket-Analysis2022/assets/94048021/6a251e19-bd6d-4a08-96e1-c658d819ff5a)
+
+
+### 6.Final 11 Team
+![Screenshot 2023-07-15 224830](https://github.com/Abhilokhande1603/T20-Cricket-Analysis2022/assets/94048021/1957be63-3b3b-435f-9ade-2a0bfb2acc52)
+
+
